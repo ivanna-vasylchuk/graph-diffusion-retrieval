@@ -1,8 +1,0 @@
-.venv/
-__pycache__/
-*.egg-info/
-.ipynb_checkpoints/
-.pytest_cache/
-*:Zone.Identifier
-data/metaqa/*
-!data/metaqa/.gitkeep
