@@ -16,6 +16,8 @@
 | `build_nb07.py` | `experiments/07_stiikist_i_chas.ipynb` | п. 7 ТЗ | ≈ 1 год |
 | `build_nb08.py` | `experiments/08_demo.ipynb` | демонстрація для захисту | ≈ 5 с |
 | `build_dlya_zvitu.py` | `docs/dlya_zvitu.md` | матеріали для звіту (етап 6) | ≈ 10 с |
+| `poglynannya_t.py` | `results/04_poglynannya_t.csv` | п. 4.2: поглинання маси висячими вузлами в тепловому ядрі (числа рисунка) | ≈ 40 с |
+| `bootstrap_ci.py` | `results/ci_p6_makro_ndcg.csv`, `results/ci_p72_pary.csv` | бутстреп-інтервали над збереженими результатами окремих запитів (пп. 6, 7.2) | ≈ 10 с |
 | `conclusions/concl00.md` … `concl07.md` | текст висновку, який генератор вставляє останньою коміркою ноутбука | — | — |
 
 Час виконання — орієнтовний, з прогонів на робочому комп'ютері.
@@ -43,6 +45,15 @@ rm experiments/_smoke07.ipynb
 ```
 
 У режимі `SMALL=1` рисунки й таблиці пишуться в `/tmp/reldiff_smoke/smoke07`, а `results/` і `figures/` не змінюються. Підсумкова таблиця стійкості все одно читає результати п. 5 і п. 6 з `results/`. Цей режим лише перевіряє, що код працює. Його числа не використовувати.
+
+## Окремі скрипти (без ноутбуків)
+
+```bash
+python tools/poglynannya_t.py     # п. 4.2, лише синтетика
+python tools/bootstrap_ci.py      # потребує results/06_metaqa_test_zapyty.csv і results/07_pary_po_parakh.csv
+```
+
+Обидва скрипти треба запустити до `build_dlya_zvitu.py`: документ читає їхні таблиці.
 
 ## Як перебудувати матеріали для звіту
 
