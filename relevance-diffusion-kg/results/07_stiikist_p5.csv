@@ -1,0 +1,17 @@
+дані,kind,метод,mean,size
+підграф seed=1,actor_actor,"PPR, α=0.05, degree, min",0.9094507714507715,300
+підграф seed=1,actor_actor,"оракул (k-hop ∩, k=1), random",1.0,300
+підграф seed=1,actor_actor,"теплове ядро, t=1, sqrt_degree, product",1.0,300
+підграф seed=1,actor_actor,"теплове ядро, t=5.67, sqrt_degree, product",1.0,300
+підграф seed=1,actor_director,"PPR, α=0.05, degree, min",0.9129021164021164,300
+підграф seed=1,actor_director,"оракул (k-hop ∩, k=1), random",1.0,300
+підграф seed=1,actor_director,"теплове ядро, t=1, sqrt_degree, product",1.0,300
+підграф seed=1,actor_director,"теплове ядро, t=5.67, sqrt_degree, product",0.9927777777777778,300
+"seed=0, лише повні пари",actor_actor,"PPR, α=0.05, degree, min",0.9235543900543901,300
+"seed=0, лише повні пари",actor_actor,"оракул (k-hop ∩, k=1), random",1.0,300
+"seed=0, лише повні пари",actor_actor,"теплове ядро, t=1, sqrt_degree, product",1.0,300
+"seed=0, лише повні пари",actor_actor,"теплове ядро, t=5.67, sqrt_degree, product",0.9941666666666666,300
+"seed=0, лише повні пари",actor_director,"PPR, α=0.05, degree, min",0.9346855403855403,300
+"seed=0, лише повні пари",actor_director,"оракул (k-hop ∩, k=1), random",0.9983333333333333,300
+"seed=0, лише повні пари",actor_director,"теплове ядро, t=1, sqrt_degree, product",1.0,300
+"seed=0, лише повні пари",actor_director,"теплове ядро, t=5.67, sqrt_degree, product",0.9966666666666667,300
